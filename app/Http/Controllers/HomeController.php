@@ -49,7 +49,7 @@ class HomeController extends Controller
             ];
 
             // $customer = $user->createOrGetStripeCustomer();
-            // $user->createOrGetStripeCustomer();
+            $user->createOrGetStripeCustomer();
             $customer = $user->updateStripeCustomer([
                 'name'      => $request->input('card_holder_name'),
                 'phone'     => $request->input('phone_number'),
